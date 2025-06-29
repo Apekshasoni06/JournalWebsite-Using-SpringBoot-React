@@ -1,0 +1,348 @@
+/* Import Google Fonts for journal feel */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;600;700&display=swap");
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 25%, #10b981 50%, #059669 75%, #047857 100%);
+  padding: 1rem;
+  position: relative;
+}
+
+/* Background decorative elements */
+.signup-background-decoration {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.signup-circle {
+  position: absolute;
+  border: 2px solid #047857;
+  border-radius: 50%;
+  animation: signupFloat 6s ease-in-out infinite;
+}
+
+.signup-circle-1 {
+  width: 120px;
+  height: 120px;
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.signup-circle-2 {
+  width: 80px;
+  height: 80px;
+  top: 20%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.signup-circle-3 {
+  width: 150px;
+  height: 150px;
+  bottom: 15%;
+  left: 20%;
+  animation-delay: 4s;
+}
+
+.signup-circle-4 {
+  width: 100px;
+  height: 100px;
+  bottom: 25%;
+  right: 10%;
+  animation-delay: 1s;
+}
+
+/* Notebook lines background */
+.signup-notebook-lines {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.signup-line {
+  width: 100%;
+  height: 1px;
+  background-color: #3b82f6;
+  margin-bottom: 2rem;
+}
+
+/* Main signup box */
+.signup-box {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 420px;
+  overflow: hidden;
+  border: 1px solid rgba(4, 120, 87, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+/* Header section */
+.signup-header {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.signup-journal-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.signup-journal-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #064e3b;
+  margin: 0 0 0.5rem 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-journal-subtitle {
+  color: #047857;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Content section */
+.signup-content {
+  padding: 2rem;
+}
+
+.signup-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #374151;
+}
+
+.signup-input-group {
+  margin-bottom: 1.5rem;
+}
+
+.signup-input-group label {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.signup-input-field {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 2px solid #10b981;
+  border-radius: 12px;
+  font-family: "Crimson Text", serif;
+  font-size: 1rem;
+  color: #374151;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.signup-input-field::placeholder {
+  color: #059669;
+  opacity: 0.7;
+}
+
+.signup-input-field:focus {
+  border-color: #059669;
+  background: rgba(16, 185, 129, 0.15);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+  transform: translateY(-1px);
+}
+
+.signup-error-message {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  border-left: 4px solid #ef4444;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(239, 68, 68, 0.1);
+}
+
+.flash-message {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border-left: 4px solid #10b981;
+  color: #047857;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.1);
+  animation: slideIn 0.5s ease-out;
+}
+
+.signup-submit-button {
+  width: 100%;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-submit-button:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
+.signup-submit-button:active {
+  transform: translateY(0);
+}
+
+.signin-section {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.signin-section p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.signin-link {
+  color: #10b981 !important;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #10b981;
+  text-underline-offset: 3px;
+  transition: all 0.3s ease;
+}
+
+.signin-link:hover {
+  color: #059669 !important;
+  text-decoration-color: #059669;
+  transform: translateY(-1px);
+}
+
+/* Decorative bottom border */
+.signup-decorative-border {
+  height: 8px;
+  background: linear-gradient(90deg, #10b981 0%, #059669 25%, #047857 50%, #065f46 75%, #064e3b 100%);
+}
+
+/* Floating elements */
+.signup-floating-element {
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  animation: signupFloat 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.signup-floating-1 {
+  top: 15%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.signup-floating-2 {
+  bottom: 20%;
+  right: 8%;
+  animation-delay: 2s;
+}
+
+/* Animations */
+@keyframes signupFloat {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 0.5rem;
+  }
+
+  .signup-box {
+    max-width: 100%;
+    margin: 0.5rem;
+  }
+
+  .signup-header {
+    padding: 1.5rem;
+  }
+
+  .signup-journal-title {
+    font-size: 1.6rem;
+  }
+
+  .signup-content {
+    padding: 1.5rem;
+  }
+
+  .signup-circle {
+    display: none;
+  }
+}
+
+/* Additional journal-themed touches */
+.signup-input-field:valid {
+  border-color: #10b981;
+}
+
+.signup-submit-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.signup-submit-button:hover::before {
+  left: 100%;
+}

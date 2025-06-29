@@ -1,0 +1,9 @@
+{
+  "short_name": "JournalApp",
+  "name": "JournalApp - Your Personal Writing Space",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f59e0b",
+  "background_color": "#fef7ed",
+  "description": "A beautiful and secure personal journaling application to capture your thoughts and memories."
+}

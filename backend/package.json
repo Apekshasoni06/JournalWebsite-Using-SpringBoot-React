@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.25.9",
+    "axios": "^1.7.7",
+    "mdb-react-ui-kit": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.28.0"
+  }
+}
