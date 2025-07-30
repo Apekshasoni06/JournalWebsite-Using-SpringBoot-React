@@ -297,44 +297,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Apeksha Soni**
 - GitHub: [@Apekshasoni06](https://github.com/Apekshasoni06)
-- LinkedIn: [Your LinkedIn Profile]
-- Email: [Your Email]
-
-## 🙏 Acknowledgments
-
-- **Spring Boot Community** - Excellent framework documentation
-- **React Team** - Amazing frontend library
-- **Netlify** - Seamless deployment platform
-- **Google Fonts** - Beautiful typography
-- **Inspiration** - Traditional paper journals
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. **Check existing issues** in the GitHub repository
-2. **Create a new issue** with detailed description
-3. **Contact the author** via email or LinkedIn
-
----
+- Email: apekshasoni56@gmail.com
 
 **⭐ If you found this project helpful, please give it a star on GitHub!**
 
 **🌐 [Live Demo](https://apeksha-journalapp.netlify.app/) | 📚 [Documentation](https://github.com/Apekshasoni06/JournalWebsite-Using-SpringBoot-React) | 🐛 [Report Bug](https://github.com/Apekshasoni06/JournalWebsite-Using-SpringBoot-React/issues)**
 \`\`\`
 
-This comprehensive README includes:
-
-✅ **Live demo link** with your Netlify URL  
-✅ **Screenshot** of your beautiful app  
-✅ **Complete feature list** based on your app  
-✅ **Tech stack** details  
-✅ **Setup instructions** for both frontend and backend  
-✅ **API documentation**  
-✅ **Deployment information**  
-✅ **Professional formatting** with emojis and sections  
-✅ **Future enhancements** roadmap  
-✅ **Contributing guidelines**  
-
-Your journal app looks amazing! The warm amber theme and clean design really capture the essence of a personal journal. 📖✨
 
